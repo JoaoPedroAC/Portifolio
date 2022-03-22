@@ -1,8 +1,63 @@
+:root {
+	--backColorHead: rgb(160, 0, 0);
+	--backColorHeadHover: rgb(105, 1, 1);
+	--backColorBody: rgba(26, 25, 25, 0.616);
+	--fontColor: rgb(196, 196, 196);
+	--shadowFonts: 0px 7px 10px black;
+}
 * {
 	margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--fontColor);
 }
-html,body{
-    height: 100vh;
+html,
+body {
+	height: 100vh;
+	background-color: var(--backColorBody);
+}
+main {
+	max-width: 1400px;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	background-color: var(--backColorHead);
+	width: 100vw;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-shadow: var(--shadowFonts);
+}
+h3 {
+	max-width: 40vw;
+	width: 200px;
+	font-size: 32px;
+}
+ul {
+	display: flex;
+	list-style: none;
+	list-style-position: inside;
+	text-align: center;
+}
+li {
+	max-width: 30vw;
+	width: 200px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+li:hover{
+    background: var(--backColorHeadHover);
+}
+
+.text {
+	width: 100vw;
+	padding: 5px 5px 0 5px;
+	text-align: center;
+}
+h2{
+    padding-top: 10px;
 }
