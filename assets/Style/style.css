@@ -1,8 +1,8 @@
 :root {
 	--backColorHead: rgb(160, 0, 0);
 	--backColorHeadHover: rgb(105, 1, 1);
-	--backColorBody: rgba(26, 25, 25, 0.616);
-	--fontColor: rgb(196, 196, 196);
+	--backColorBody: rgb(54, 53, 53);
+	--fontColor: #c4c4c4;
 	--shadowFonts: 0px 7px 10px black;
 }
 * {
@@ -13,14 +13,14 @@
 }
 html,
 body {
-	height: 100vh;
-	background-color: var(--backColorBody);
+	height: 100%;
 }
 main {
-	max-width: 1400px;
-	display: flex;
-	flex-direction: column;
+	max-width: 1500px;
+	width: 100vw;
+	background-color: var(--backColorBody);
 }
+/*  INICIO DO CONTEUDO DO CABEÇALHO */
 header {
 	background-color: var(--backColorHead);
 	width: 100vw;
@@ -41,23 +41,41 @@ ul {
 	list-style: none;
 	list-style-position: inside;
 	text-align: center;
+	flex-wrap: nowrap;
 }
 li {
 	max-width: 30vw;
 	width: 200px;
-    padding: 10px;
-    font-size: 20px;
+	padding: 10px;
+	font-size: 20px;
 }
 
-li:hover{
-    background: var(--backColorHeadHover);
+li:hover {
+	background: var(--backColorHeadHover);
 }
-
+/*  INICIO DO CONTEUDO DO CORPO */
 .text {
 	width: 100vw;
 	padding: 5px 5px 0 5px;
 	text-align: center;
 }
-h2{
-    padding-top: 10px;
+h2 {
+	padding-top: 10px;
+}
+p{
+	padding-bottom: 5px;
+}
+.project-blocks{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+img {
+	max-width: 90%;
+	width: 300px;
+	padding: 3px 10px;
+}
+img:nth-child(3){
+	width: 400px;
 }
