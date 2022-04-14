@@ -110,3 +110,7 @@ input{
 	padding-left: 5px;
 	color: black;
 }
+textarea{
+	max-width: 75vw;
+	color: black;
+}
